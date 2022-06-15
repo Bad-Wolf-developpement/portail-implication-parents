@@ -20,18 +20,21 @@ jobs:
         contains(github.event.issue.labels.*.name, 'Planification') && !contains(github.event.issue.labels.*.name, 'Phase1')
       uses: srggrs/assign-one-project-github-action@1.3.1
       with:
-        project: 'https://github.com/Bad-Wolf-developpement/portail-implication-parents/projects/1#column-18907164'
+        project: 'https://github.com/Bad-Wolf-developpement/portail-implication-parents/projects/1'
+        column_name: 'TODO'
     
     - name: Assign issues to project Phase 1
       if: |
         contains(github.event.issue.labels.*.name, 'Phase1')
       uses: srggrs/assign-one-project-github-action@1.3.1
       with:
-        project: 'https://github.com/Bad-Wolf-developpement/portail-implication-parents/projects/1#column-18907157'
+        project: 'https://github.com/Bad-Wolf-developpement/portail-implication-parents/projects/1'
+        column_name: 'Phase 1'
         
     - name: Assign issues to project Phase 1
       if: |
         contains(github.event.issue.labels.*.name, 'Phase2')
       uses: srggrs/assign-one-project-github-action@1.3.1
       with:
-        project: 'https://github.com/Bad-Wolf-developpement/portail-implication-parents/projects/1#column-18907158'
+        project: 'https://github.com/Bad-Wolf-developpement/portail-implication-parents/projects/1'
+        column_name: 'Phase 2'
