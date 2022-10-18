@@ -1,0 +1,29 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  box-sizing: border-box;
+  font-size:10px;
+}
+body {
+  padding: 0;
+  background-color: #305067;
+  color: #fff;
+}
+#container{
+	background-color: #205067;
+}
+input {
+  width: 26rem;
+}
+button {
+  font-size: 1.6rem;
+  background-color: #597285;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1rem 4rem;
+  color: #fff;
+}
+.error {
+  color: orange;
+}
